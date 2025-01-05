@@ -14,16 +14,16 @@ build:
     - lizard = lizard:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
     - pygments
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -34,6 +34,7 @@ test:
     - lizard --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://www.lizard.ws
