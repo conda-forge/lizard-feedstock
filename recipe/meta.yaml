@@ -1,5 +1,5 @@
 {% set name = "lizard" %}
-{% set version = "1.17.25" %}
+{% set version = "1.17.26" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/terryyin/lizard/archive/refs/tags/{{ version }}.tar.gz
-  sha256: f2d68c9143b460b822aad84bbbbe2015909cce36f89cfc3422182ead35630a2c
+  sha256: 3a15a630749ce754a6875e38347f58980217db310284b57df406f71ace08f510
 
 build:
   entry_points:
